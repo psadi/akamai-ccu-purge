@@ -41,7 +41,7 @@ start = time.perf_counter()
 parser = argparse.ArgumentParser()
 purge_content_by = parser.add_mutually_exclusive_group()
 purge_content_by.add_argument("-u", "--url", type=str, help="URL's to flush, usage: -u url1,url2 (or) --url url1,url2")
-purge_content_by.add_argument("-c", "--cpcode", type=int,
+purge_content_by.add_argument("-c", "--cpcode", type=str,
                               help="CP Codes to flush, usage: -c 0000,1111 (or) --cpcode 0000,1111")
 parser.add_argument("--host_name", type=str, help="Akamai EdgeGrid Hostname, refers .edgerc by default")
 parser.add_argument("--access_token", type=str, help="Akamai EdgeGrid Access Token")
